@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+body {
+    background: #303030;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main div {
+    display: block;
+    padding: 60px 20px;
+}
+
+ h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    transition: .4s;
+}
+
+main div:hover h1 {
+    transform: scale(1.05);
+
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+h1#title {
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(214, 214, 214);
+}
+
+#body {
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    max-width: 1200px;
+    margin: 10px auto;
+    color: rgb(214, 214, 214);
+}
+
+#health {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#educate {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1009&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#conserve {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1503087759760-f121ec0f8d8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#transport {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519408930538-2c24bffbc82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1282&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#structure {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1525968673172-f33a3a0742b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#production {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1543418219-44e30b057fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+    background-position: center;
+    background-size: 100%;
+    transition: .6s;
+}
+
+#health:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+#educate:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+#conserve:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+#transport:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+#structure:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+#production:hover {
+    background-size: 120%;
+    outline: rgba(45, 94, 255, 0.5) 160px solid;
+    outline-offset: -160px;
+}
+
+
+#map_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+    background-color: rgb(36, 36, 36);
+}
+
+#mydiv {
+    position: absolute;
+    display: block;
+    height: 1500px;
+    width: 2000px;
+    background: url('citymap-01.png');
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    cursor: -webkit-grabbing;
+}
